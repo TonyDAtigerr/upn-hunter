@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/upn-hunter-logo.png" alt="UPN-Hunter Logo" width="400">
+  <img src="assets/upn-hunter-logo.png" alt="UPN-Hunter Logo" width="650">
 </p>
 
 <h1 align="center">UPN-Hunter</h1>
