@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upn-hunter"
+version = "1.1.0"
+description = "Hunt real Azure AD UPNs via Microsoft Teams Presence API — Python port of AADInternals"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "TonyDAtigerr"},
+]
+keywords = [
+    "azure", "azure-ad", "entra-id", "teams", "upn",
+    "enumeration", "red-team", "pentesting", "security",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+tls = ["curl_cffi>=0.7.0"]
+xlsx = ["openpyxl>=3.1.0"]
+full = [
+    "curl_cffi>=0.7.0",
+    "openpyxl>=3.1.0",
+]
+
+[project.scripts]
+upn-hunter = "upnhunter:main"
+
+[project.urls]
+Homepage = "https://github.com/TonyDAtigerr/upn-hunter"
+Issues = "https://github.com/TonyDAtigerr/upn-hunter/issues"
